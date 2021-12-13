@@ -5,7 +5,7 @@ import {} from "@ant-design/icons";
 import StudioMenu from "./StudioMenu";
 import {Row, Col, Card, Form, BackTop} from "antd";
 import StudioTabs from "./StudioTabs";
-import {StateType} from "@/pages/FlinkSqlStudio/model";
+import type {StateType} from "@/pages/FlinkSqlStudio/model";
 import StudioConsole from "./StudioConsole";
 import StudioLeftTool from "./StudioLeftTool";
 import StudioRightTool from "./StudioRightTool";
@@ -87,7 +87,6 @@ const Studio: React.FC<StudioProps> = (props) => {
               style={{
                 height: 4,
                 width: '100%',
-                background: 'rgb(240, 240, 240)',
               }}
             />
           }
@@ -105,7 +104,6 @@ const Studio: React.FC<StudioProps> = (props) => {
                   style={{
                     width: 4,
                     height: '100%',
-                    background: 'rgb(240, 240, 240)',
                   }}
                 />
               }
@@ -122,7 +120,6 @@ const Studio: React.FC<StudioProps> = (props) => {
                     style={{
                       width: 4,
                       height: '100%',
-                      background: 'rgb(240, 240, 240)',
                     }}
                   />
                 }

@@ -1,11 +1,11 @@
 import { Empty } from "antd";
 import {FlowAnalysisGraph} from '@ant-design/charts';
-import {StateType} from "@/pages/FlinkSqlStudio/model";
+import type {StateType} from "@/pages/FlinkSqlStudio/model";
 import {connect} from "umi";
 import styles from "./index.less";
 import React, {useState} from "react";
 
-const StudioGraph = (props:any) => {
+const StudioGraph = (props: any) => {
   const {data,current,currentSession} = props;
 
   const config = {
@@ -17,7 +17,7 @@ const StudioGraph = (props:any) => {
         autoEllipsis: false,
         padding: [10],
         containerStyle: {
-          fill: '#fff',
+          fill: '#000',
           width:'100px',
         },
         style: (cfg, group, type) => {

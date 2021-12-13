@@ -3,7 +3,7 @@ import {
   CodeOutlined, TableOutlined, RadarChartOutlined, CalendarOutlined, FileSearchOutlined, DesktopOutlined
   , FunctionOutlined, ApartmentOutlined
 } from "@ant-design/icons";
-import {StateType} from "@/pages/FlinkSqlStudio/model";
+import type {StateType} from "@/pages/FlinkSqlStudio/model";
 import {connect} from "umi";
 import styles from "./index.less";
 import StudioMsg from "./StudioMsg";
@@ -19,10 +19,10 @@ const {TabPane} = Tabs;
 const StudioConsole = (props: any) => {
 
   const {height} = props;
-  let consoleHeight = (height - 37.6);
+  const consoleHeight = (height - 37.6);
   return (
     <Tabs defaultActiveKey="StudioMsg" size="small" tabPosition="top" style={{
-      border: "1px solid #f0f0f0", height: height, margin: "0 32px"
+      border: "1px solid #000", height: height, margin: "0 32px"
     }}>
       <TabPane
         tab={
