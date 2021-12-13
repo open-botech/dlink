@@ -55,7 +55,7 @@ export default {
   'menu.clusters.clusterConfiguration': '集群配製',
   'menu.database': '數據源中心',
   'menu.studio': 'FlinkSql IDE',
-  'menu.flinksqlstudio': 'FlinkSql Studio',
+  'menu.flinksqlstudio': 'SQL Studio',
   'menu.taskcenter': '作業中心',
   'menu.taskcenter.task': '作業管理',
   'menu.taskcenter.jar': 'Jar 管理',
